@@ -1,0 +1,142 @@
+/**
+* This file is for training purpose for  beginers in learning about CSS.
+* You can update or share.
+* Author : Kas Gracias Tmb
+* Github : graciaskas96
+* Linkedin : Kas Gracias Tmb
+* Instagram : Kas Gracias Tmb
+**/
+@font-face {
+	font-family: 'Poppins';
+	src: url(/css/Poppins-Medium.ttf);
+	font-weight: 600;
+}
+
+:root {
+	--white-primary: #fff;
+	--dark-primary: #1e1e1e;
+	--dark-secondary: #2e2e2e;
+	--dark-third: #3e3e3e;
+	--dark-fourth: #4e4e4e;
+	--dark-gray: rgb(135, 135, 135);
+}
+*,
+::before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	width: 100%;
+	height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-weight: bold;
+	font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
+/*** Mobile model ***/
+.mobile {
+	width: 345px;
+	height: 667px;
+	background: var(--dark-primary);
+	margin: 2% auto;
+	position: relative;
+	border-radius: 65px;
+	box-shadow: 0px 2px 1px 6px var(--dark-gray);
+	overflow: hidden;
+}
+/*========= 1. MOBILE SCREEN ========================*/
+.mobile .mobile-screen {
+	background: var(--dark-secondary);
+	box-shadow: 0px 0px 5px var(--dark-gray) inset;
+	width: 345px;
+	height: 667px;
+}
+/*========== 1.1 TOP SCREEN [CAMERA & SPEAKER] ========*/
+.mobile .mobile-screen .screen-camera {
+	height: 90px;
+	text-align: center;
+	padding-top: 41px;
+}
+/*========== 1.1.1 TOP SCREEN [CAMERA & SPEAKER] CONTAINER ========*/
+.mobile .mobile-screen .screen-camera .camera-tools {
+	width: 25%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+.mobile .mobile-screen .screen-camera .camera-tools div {
+	height: 7px;
+	background-color: var(--dark-fourth);
+}
+/*========== 1.1.1.1 TOP SCREEN [CAMERA & SPEAKER] CONTAINER CAMERA========*/
+.mobile .mobile-screen .screen-camera div.camera {
+	width: 7px;
+	padding: 4px;
+	border-radius: 50%;
+}
+/*========== 1.1.1.2 TOP SCREEN [CAMERA & SPEAKER] CONTAINER CAMERA========*/
+.mobile .mobile-screen .screen-camera div.speaker {
+	width: 75%;
+	border-radius: 5px;
+}
+
+/*==========================   2.0 TOUCH SCREEN   =========================*/
+.mobile .screen-touch {
+	height: 490px;
+	background: var(--white-primary);
+	margin: 0px 20px;
+	padding: 10px;
+	overflow: hidden;
+	position: relative;
+}
+/*======================   2.1 TOUCH SCREEN  CONTAINER  ===================*/
+.mobile .screen-touch .container {
+	width: 100%;
+	background: inherit;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	margin: auto;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	padding: 0px 20px;
+}
+/*===================   2.1 TOUCH SCREEN  CONTAINER  LOGO  =============*/
+.mobile .screen-touch .container .logo {
+	border-radius: 30px;
+	overflow: hidden;
+}
+.mobile .screen-touch .container .logo img {
+	border-radius: 30px;
+}
+/*=================  2.2 TOUCH SCREEN  CONTAINER  AUTHOR  ===========*/
+.mobile .screen-touch .container .author h4 {
+	margin-top: 20px;
+	color: var(--dark-primary);
+}
+
+/*==========================   3.0 MAIN BOUTTON  =========================*/
+.mobile .mobile-screen .screen-boutton {
+	height: 87px;
+	padding: 5px 0px;
+}
+/*==========================   3.1 BOUTTON  =========================*/
+.mobile .mobile-screen .screen-boutton .boutton {
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	margin: 2% auto;
+	background: #2e2e2e;
+	box-shadow: 2px 1px 5px 2px #0e0e0e inset;
+}
